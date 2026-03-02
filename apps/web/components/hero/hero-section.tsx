@@ -103,7 +103,7 @@ export default function HeroSection() {
             <div className="relative h-32 w-32 overflow-hidden rounded-full sm:h-40 sm:w-40">
               {/* TODO: avatar 的顏色 */}
               <Image
-                src="/avatar.png"
+                src="/avatar.webp"
                 alt="個人照片"
                 fill
                 className="object-cover"
