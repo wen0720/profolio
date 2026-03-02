@@ -27,7 +27,6 @@ function GlitchText({ text, className }: { text: string; className?: string }) {
 
 function TypewriterTagline({ text }: { text: string }) {
   const [displayed, setDisplayed] = useState('');
-  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     let i = 0;
@@ -42,20 +41,10 @@ function TypewriterTagline({ text }: { text: string }) {
     return () => clearInterval(interval);
   }, [text]);
 
-  useEffect(() => {
-    const cursor = setInterval(() => setShowCursor((v) => !v), 530);
-    return () => clearInterval(cursor);
-  }, []);
-
   return (
     <span className="text-sm tracking-[0.15em] text-slate-400 sm:text-base md:text-lg">
       {displayed}
-      <span
-        className={cn(
-          'ml-0.5 inline-block h-[1em] w-0.5 bg-slate-500 align-middle transition-opacity duration-100',
-          showCursor ? 'opacity-100' : 'opacity-0',
-        )}
-      />
+      <span className="ml-0.5 inline-block h-[1em] w-0.5 animate-[cursor-blink_1.06s_step-end_infinite] bg-slate-500 align-middle" />
     </span>
   );
 }
@@ -112,8 +101,9 @@ export default function HeroSection() {
           {/* Subtle border ring */}
           <div className="relative rounded-full bg-linear-to-b from-white/15 via-white/5 to-white/10 p-px">
             <div className="relative h-32 w-32 overflow-hidden rounded-full sm:h-40 sm:w-40">
+              {/* TODO: avatar 的顏色 */}
               <Image
-                src="/avatar.jpg"
+                src="/avatar.png"
                 alt="個人照片"
                 fill
                 className="object-cover"

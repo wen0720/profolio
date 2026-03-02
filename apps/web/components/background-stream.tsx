@@ -67,7 +67,7 @@ export default function BackgroundStream() {
         className="pointer-events-none absolute inset-0 z-1"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(0,240,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,240,255,0.06) 1px, transparent 1px)',
+            'linear-gradient(rgba(0,240,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0,240,255,0.15) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />

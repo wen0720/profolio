@@ -1,6 +1,7 @@
 import HeroSection from '@/components/hero/hero-section';
 import BackgroundStream from '@/components/background-stream';
 import SkillSection from '@/components/skill-section';
+import ExperienceSection from '@/components/experience-section';
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <BackgroundStream />
       <HeroSection />
       <SkillSection />
+      <ExperienceSection />
     </>
   );
 }

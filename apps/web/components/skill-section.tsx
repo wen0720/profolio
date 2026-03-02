@@ -23,7 +23,7 @@ const SKILLS = [
     category: 'FRONTEND',
     level: 80,
     color: '#5dba97',
-    description: '滾動動態 GSAP - scrollTrigger、web canvas API、3D 模型載入等',
+    description: '滾動動態 GSAP、web canvas API、3D 動態等',
     tags: ['GSAP', 'canvas', 'three.js', 'css'],
   },
   {
@@ -160,12 +160,12 @@ function SkillCard({ skill }: { skill: (typeof SKILLS)[number] }) {
 
 export default function SkillSection() {
   return (
-    <section className="relative px-6 pt-24 pb-32">
+    <section className="relative mt-24 mb-32 px-6">
       {/* Section header */}
       <div className="mx-auto mb-14 max-w-4xl">
         <div className="mb-3 flex items-center gap-4">
           <span className="font-mono text-[10px] tracking-[0.3em] text-sky-500">
-            SYS://SKILL_MATRIX
+            Topic://
           </span>
           <div className="h-px flex-1 bg-linear-to-r from-white/8 to-transparent" />
         </div>

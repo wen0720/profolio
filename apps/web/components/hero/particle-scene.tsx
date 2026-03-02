@@ -15,8 +15,8 @@ function WireframeRing() {
   });
 
   return (
-    <mesh ref={ringRef} position={[0, 0, 0]}>
-      <torusGeometry args={[2.8, 0.004, 16, 160]} />
+    <mesh ref={ringRef} position={[0, 0.32, 0]}>
+      <torusGeometry args={[2.8, 0.002, 16, 160]} />
       <meshBasicMaterial color="#00f0ff" transparent opacity={0.3} />
     </mesh>
   );
