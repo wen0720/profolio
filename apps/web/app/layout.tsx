@@ -1,5 +1,5 @@
 import { Noto_Sans_TC } from 'next/font/google';
-
+import type { Metadata } from 'next';
 import '@workspace/ui/globals.css';
 import './globals.css';
 import { Providers } from '@/components/providers';
@@ -9,6 +9,19 @@ const fontDisplay = Noto_Sans_TC({
   variable: '--font-display',
   weight: ['400', '500', '700', '900'],
 });
+
+export const metadata: Metadata = {
+  title: 'Tim Cheng - Portfolio',
+  description: 'Make it work first, make it right, make it fast.',
+  formatDetection: {
+    telephone: false,
+    address: false,
+    email: false,
+  },
+  icons: {
+    icon: '/fav-icon.png',
+  },
+};
 
 export default function RootLayout({
   children,

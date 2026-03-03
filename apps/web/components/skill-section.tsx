@@ -30,10 +30,10 @@ const SKILLS = [
     id: 'express',
     name: 'Express',
     category: 'BACKEND',
-    level: 50,
+    level: 40,
     color: '#c49060',
-    description: '以 express.js 中間層以達成需求。',
-    tags: ['RESTful API'],
+    description: '以 express.js 為中介層以達成需求。',
+    tags: ['Middleware'],
   },
 ] as const;
 
