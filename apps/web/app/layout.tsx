@@ -11,7 +11,7 @@ const fontDisplay = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: 'Tim Cheng - Portfolio',
+  title: 'Tim Chen - Portfolio',
   description: 'Make it work first, make it right, make it fast.',
   formatDetection: {
     telephone: false,
