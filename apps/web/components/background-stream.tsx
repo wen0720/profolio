@@ -61,7 +61,7 @@ function DataStream() {
 
 export default function BackgroundStream() {
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10">
+    <div className="pointer-events-none fixed inset-0 z-0">
       {/* Grid overlay */}
       <div
         className="pointer-events-none absolute inset-0 z-1"

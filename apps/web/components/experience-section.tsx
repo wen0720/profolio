@@ -12,9 +12,9 @@ import {
 } from 'react-icons/si';
 
 const TOOLS = [
+  { name: 'Vue', icon: SiVuedotjs, color: '#4FC08D' },
   { name: 'Next.js', icon: SiNextdotjs, color: '#FFFFFF' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-  { name: 'Vue', icon: SiVuedotjs, color: '#4FC08D' },
   { name: 'ESLint', icon: SiEslint, color: '#4B32C3' },
   { name: 'PostCSS', icon: SiPostcss, color: '#DD3A0A' },
   { name: 'Three.js', icon: SiThreedotjs, color: '#FFFFFF' },

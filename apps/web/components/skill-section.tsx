@@ -49,8 +49,7 @@ function ProficiencyBar({ level, color }: { level: number; color: string }) {
             key={i}
             className="h-1.5 flex-1 rounded-[1px]"
             style={{
-              backgroundColor:
-                i < filled ? `${color}90` : 'rgba(255,255,255,0.07)',
+              backgroundColor: i < filled ? `${color}90` : 'rgba(255,255,255,0.07)',
             }}
           />
         ))}
@@ -71,7 +70,10 @@ function SkillCard({ skill }: { skill: (typeof SKILLS)[number] }) {
   const c = skill.color;
 
   return (
-    <div className="group relative overflow-hidden border border-white/[0.07] bg-black/35 backdrop-blur-sm">
+    <div
+      className="group relative overflow-hidden border border-white/[0.07] bg-black/35
+        backdrop-blur-sm"
+    >
       {/* Accent top line */}
       <div
         className="absolute inset-x-0 top-0 h-px"
@@ -100,16 +102,21 @@ function SkillCard({ skill }: { skill: (typeof SKILLS)[number] }) {
 
       {/* Hover ambient glow */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity
+          duration-500 group-hover:opacity-100"
         style={{
           background: `radial-gradient(ellipse 80% 50% at 50% -10%, ${c}0D 0%, transparent 70%)`,
         }}
       />
 
       {/* Scan line on hover */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden opacity-0
+          transition-opacity duration-300 group-hover:opacity-100"
+      >
         <div
-          className="absolute top-0 h-full w-px animate-[skill-scan_2.4s_ease-in-out_infinite]"
+          className="absolute top-0 h-full w-px
+            animate-[skill-scan_2.4s_ease-in-out_infinite]"
           style={{
             background: `linear-gradient(to bottom, transparent 0%, ${c}30 30%, ${c}50 50%, ${c}30 70%, transparent 100%)`,
           }}
@@ -126,15 +133,16 @@ function SkillCard({ skill }: { skill: (typeof SKILLS)[number] }) {
 
         {/* Name */}
         <div className="mb-3 flex items-baseline gap-2.5">
-          <h3 className="[font-family:var(--font-display)] text-[1.75rem] font-bold tracking-tight text-white/90 sm:text-[2rem]">
+          <h3
+            className="text-[1.75rem] font-bold tracking-tight text-white/90
+              sm:text-[2rem]"
+          >
             {skill.name}
           </h3>
         </div>
 
         {/* Description */}
-        <p className="mb-5 text-[13px] leading-relaxed text-white">
-          {skill.description}
-        </p>
+        <p className="mb-5 text-[13px] leading-relaxed text-white">{skill.description}</p>
 
         {/* Proficiency */}
         <div className="mb-5">
@@ -146,7 +154,8 @@ function SkillCard({ skill }: { skill: (typeof SKILLS)[number] }) {
           {skill.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-[2px] border px-2 py-0.5 font-mono text-[10px] tracking-wide transition-colors duration-300 group-hover:border-white/10"
+              className="rounded-[2px] border px-2 py-0.5 font-mono text-[10px]
+                tracking-wide transition-colors duration-300 group-hover:border-white/10"
               style={{ borderColor: `${c}22`, color: c }}
             >
               {tag}
@@ -177,7 +186,9 @@ export default function SkillSection() {
           SKILL
         </h2>
 
-        <div className="mt-4 h-px bg-linear-to-r from-cyan-400/20 via-white/5 to-transparent" />
+        <div
+          className="mt-4 h-px bg-linear-to-r from-cyan-400/20 via-white/5 to-transparent"
+        />
       </div>
 
       {/* Grid */}

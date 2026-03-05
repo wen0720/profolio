@@ -2,32 +2,32 @@ import VideoContent from '@/components/video-content';
 
 const FEATURE_CONFIG = [
   {
-    title: '生成標題',
-    text: '生成多種標題，包含新聞性、吸引力、SEO 友善等不同取向，提供靈感，協助構思合適標題。',
+    title: '',
+    text: '',
     videoSrc: '',
     mbVideoSrc: '',
   },
   {
-    title: '生成描述',
-    text: '生成描述文字，快速提取文章摘要，由您做最後校驗。',
+    title: '',
+    text: '',
     videoSrc: '',
     mbVideoSrc: '',
   },
   {
-    title: '生成關鍵字',
-    text: '分析文章內容，抽取重要字詞，想關鍵字不再卡卡！',
+    title: '',
+    text: '',
     videoSrc: '',
     mbVideoSrc: '',
   },
   {
-    title: '配圖推薦',
-    text: '依據文章搜尋合適的配圖，讓找圖不再成為工作負擔。',
+    title: '',
+    text: '',
     videoSrc: '',
     mbVideoSrc: '',
   },
   {
-    title: '相關報導',
-    text: '搜尋過往報導，延伸相關報導更簡單。',
+    title: '',
+    text: '',
     videoSrc: '',
     mbVideoSrc: '',
   },

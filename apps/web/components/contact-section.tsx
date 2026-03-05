@@ -10,17 +10,17 @@ const LINKS = [
     description: '',
   },
   {
+    name: 'Blog',
+    icon: Globe,
+    color: '#64bfcc',
+    url: 'https://blog.papersuniverse.com',
+    description: '',
+  },
+  {
     name: 'Medium',
     icon: SiMedium,
     color: '#FFFFFF',
     url: 'https://medium.com/@faition2',
-    description: '',
-  },
-  {
-    name: 'Blog',
-    icon: Globe,
-    color: '#64bfcc',
-    url: 'https://blog.papersuniverse.com/',
     description: '',
   },
 ] as const;

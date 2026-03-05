@@ -11,7 +11,7 @@ const fontDisplay = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: 'Tim Chen - Portfolio',
+  title: 'Tim Chen - site',
   description: 'Make it work first, make it right, make it fast.',
   formatDetection: {
     telephone: false,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     email: false,
   },
   icons: {
-    icon: '/fav-icon.png',
+    icon: '/favicon.png',
   },
 };
 

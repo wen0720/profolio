@@ -1,1 +1,1 @@
-# Tim Chen personal profolio
+# Tim Chen personal protfolio
